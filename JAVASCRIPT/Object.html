@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+
+     <div class="container-fluid">
+         <div class="row">
+             <div class="col-9 mx-auto shadow-sm mt-5">
+                 <h1 style="text-align: center; ">Sign Up Page</h1>
+                 <input type="text" placeholder="Enter your Firstname" class="form-control my-2"  style="border-radius: 30px;" id="first"> <br>
+                 <input type="text" placeholder="Enter your Lastname" class="form-control my-2" style="border-radius: 30px;" id="last"> <br>
+                 <input type="text" placeholder="Enter your Email" class="form-control my-2" style="border-radius: 30px;" id="email"> <br>
+                 <input type="text" placeholder="Enter your Password" class="form-control my-2" style="border-radius: 30px;" id="password"> <br>
+                 <button class="btn btn-success my-2 w-100" onclick="signUp()">Sign up</button>
+             </div>
+         </div>
+     </div>
+     <hr>
+     <div id="disp"></div>
+    
+
+    <SCript>
+        var allstudents = [
+            {
+                firstName : "victor",
+                lastName : "pelumi",
+                email : "victekld18@gmail.com",
+                password : "victr128",  
+            }
+        ]
+
+
+        var allstudents = []
+            function signUp (){
+                var student = {
+            firstName : first.value,
+            lastName : last.value,
+            email : email.value,
+            password : password.value
+        }
+        allstudents.push(student)
+        console.log(allstudents)
+            }
+       
+
+        
+
+
+
+
+
+
+        // var myTable = {
+        //     color: "white",
+        //     shape: "rectangular",
+        //     noOfStands: 2,
+        // }
+        // console.log(myTable)
+        // //Dot Notation ---
+        // console.log(myTable.color, myTable.shape)
+        // // Bracket Notation---
+        // console.log(myTable["color"], myTable["shape"])
+
+        // var victor = {
+        //     height : "5ft",
+        //     firstName : "Victor",
+        //     age : 20,
+        //     gender : "Male",
+        //     talk : function(){
+        //         console.log("I am talking")
+        //     },
+        //     // walk : function(){
+        //     //     console.log("I am walking")
+        //     // }
+        //     walk : function(destination){
+        //         console.log("I can walk" + destination)
+        //     }
+        // }
+        // console.log(victor.firstName)
+        // console.log(victor.age)
+        // console.log(victor.height)
+        // victor.walk()
+        // victor.walk(" to my wife's house")
+
+
+
+
+
+        // var student = {
+        //     firstName : "victor",
+        //     lastName : "pelumi",
+        //     email : "victorpelumi@gmail.com",
+        //     password : "victor16"
+        // }
+        // //add to an object----
+        // student.age = 300
+        // //edit an object-----
+        // student.firstName = "pelumi"
+        // console.log(student)
+    </SCript>
+
+
+</body>
+</html>

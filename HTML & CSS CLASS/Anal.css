@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    perspective: 1000px;
+}
+.img img {
+    width: 30%;
+    height: 50vh;
+    display: block;
+    margin: 50px auto;
+    /* filter: blur(50px); */
+    /* filter: grayscale(100%); */
+    /* filter: brightness(200%); */
+    /* filter: contrast(200%); */
+    /* filter: drop-shadow(20px 20px 10px red); */
+    /* filter: hue-rotate(32deg); */
+    /* filter: invert(); */
+    /* filter: opacity(30%); */
+    /* filter: saturate(200%); */
+    filter: sepia();
+
+    /* transform: rotateX(60deg); */
+    /* transform: rotateY(60deg); */
+    /* transform: translate(-160pt 150px); */
+    /* transform: skew(20deg); */
+    /* transform: scale(100%); */
+
+    /* scale: 60%; */
+    /* rotate: 40deg; */
+
+    animation-name: slider;
+    animation-duration: 5s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+     /* animation-direction: reverse; */
+     /* animation-timing-function: ease-in; */
+     /* animation-timing-function: ease-out; */
+     /* animation-timing-function: ease-in-out; */
+     /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+     animation-delay: 3s;
+     /* animation-play-state: paused; */
+     animation-fill-mode: backwards;
+
+
+}
+
+
+@keyframes slider {
+    0% {
+        translate: 0;
+    }
+
+    100% {
+        translate: 300px;
+        filter: none;
+    }
+}

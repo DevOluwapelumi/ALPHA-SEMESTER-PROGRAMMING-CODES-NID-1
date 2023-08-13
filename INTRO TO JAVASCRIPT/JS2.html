@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CLASS 2</title>
+    <link rel="stylesheet" href="./JS2.CSS">
+</head>
+<body>
+
+    <!-- NOTES: CONDITIONAL STATEMENT
+    COMPARISON OPERATION (COMPARISON OPERATOR)
+    VARIABLE DECLARATION: THEY ARE LIKE CONTAINER WHERE YOU PUT THINGS IN JAVASCRIPT
+    DATA TYPES: STRING-""  NUMBER-10, 20   OBJECT
+    SYMBOLS: AND=&, OR=|| -->
+
+    <div class="body">
+    <div style=" padding-left: 550px; padding-top: 300px;">
+    <h1 style=" color: chartreuse; font-size: 50px;">GRADING SYSTEM</h1>
+    <input type="text" placeholder="Enter your score..." style="height: 5vh; margin-left: 150px;" id="scoreInput">
+    <button style="background-color: blue; color: white; padding: 10px; border-radius: 10px;" onclick="grade()">GRADE</button>
+     <P id="result" style="font-size: 50pt; text-align: center;"></P>
+    </div>
+</div>
+
+
+    <script>
+        // var name = "Dorcas";
+        // var age = 18;
+
+        
+        function grade(){
+            var scores = scoreInput.value;
+
+            if (scores <= 25){
+                result.innerText = "FAILED!!!"
+                result.style.color = "red"
+            }else if (scores > 25 && scores <= 40 ){
+                result.innerText = "POOR!!!"
+                result.style.color = "purple"
+            }else if (scores > 40 && scores <= 60 ){
+                result.innerText = "GOOD!!!"
+                result.style.color = "Yellow"
+            }else if (scores > 60 && scores <= 75){
+                result.innerText = "VERY GOOD!!!"
+                result.style.color = "blue"
+            }else if (scores > 75 && scores <= 100){
+                result.innerText = "EXCELLENT!!!"
+                result.style.color = "green"
+            }
+            
+            if (scores > 100){
+                result.innerText = "NO RESULT"
+                result.style.color = "red"
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+        //         if (scores <= 39) {
+        //          result.innerText = "FAILED";
+        //          result.style.color = "blue";
+        //    } else if (scores > 39 && scores <= 49 ){
+        //          result.innerText = "GOOD";
+        //          result.style.color = "green";   
+        //    } else if (scores > 49 && scores <= 70 ){
+        //          result.innerText = "VERY GOOD";
+        //          result.style.color = "green"; 
+        //    } else if (scores > 70 ){
+        //          result.innerText = "EXCELLENCE";
+        //          result.style.color = "green"; 
+        //    } if (scores > 100) {
+        //     result.innerText = "NO RESULT"
+        //     result.style.color = "blue" 
+        //    } if (typeof scores === 'string'){
+        //     result.innerText = "ERORR..."
+        //     result.style.color = "blue" 
+        //    } if (scores == "") {
+        //     result.innerText = "Please enter your score."
+        //     result.style.color = "blue"
+        //    }
+        //    }
+
+
+        // 18 = You are now an adult
+        // below 18 = You are still a small child
+        // above 18 = Na adult you be ooo
+        // alert("name");
+
+        // if (name == "Pelumi") {
+        //     alert("You are correct")
+        // } else {
+        //     alert ("You are not correct")
+        // }
+        
+        // if (age == 18) {
+        //     alert("You are now an adult")
+        // } else if (age < 18) {
+        //     alert("You are still a small child")
+        // } else if (age > 18) {
+        //     alert("Na adult you be now!!!")
+        // } else {
+        //     alert("uhmmmmmmm")
+        // }
+
+    </script>
+
+
+    
+</body>
+</html>

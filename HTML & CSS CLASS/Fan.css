@@ -1,0 +1,29 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    perspective: 1000px;
+}
+.img img {
+    width: 30%;
+    height: 50vh;
+    display: block;
+    margin: 50px auto;
+    filter: sepia(50);
+    animation-name: slider;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-delay: 3s; */
+    /* animation-fill-mode: backwards; */
+}
+@keyframes slider {
+        100% {
+            transform: rotate(1200deg);
+        }
+    }
+
+

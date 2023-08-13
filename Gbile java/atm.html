@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./atm.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent-container">
+    <div class="header">
+        <marquee behavior="alternate" direction="right"><h1 class="">MY ATM MACHINE</h1></marquee>
+    </div>
+
+    <div class="child1">
+        <div class="child2">
+        <p class="text1">Welcome!!!</p>
+        <h3 class="text2">OGUNDIRAN VICTOR PELUMI</h3> <br>
+
+        <p class="text1">PIN</p>
+        <h3 class="text2">***4</h3> <br>
+
+        <p class="text1">Balance</p>
+        <h3 class="text2" id="text3">$50,000</h3> <br>
+
+        </div>
+        <div class="child3">
+            <div class="child4">
+                <h3 class="child5" id="result"></h3>
+                <input type="text" placeholder="#" id="amount">
+            </div> <br>
+            <button class="btn btn-danger w-10" onclick="withdraw ()">Withdraw</button> <br>
+            <button onclick="deposit ()">Deposit</button> <br>
+            <button onclick="account ()">Accout Number</button> <br>
+            <button onclick="airtime ()">Buy Airtime</button> <br>
+            <button onclick="transfer ()">Transfer</button>
+        </div>
+    </div>
+
+  
+    </div>
+
+    <script>
+        var balance = 50000
+        function withdraw () {
+            var amountEntered = Number (amount.value)
+        if (amountEntered > balance){
+            result.innerHTML= "Insuffient Fund"
+        }
+        else if (amountEntered < 0){
+            result.innerHTML= "Invalid Amount"
+        }
+        else if (amountEntered == ""){
+            result.innerHTML = "Kindly enter an amount"
+        }
+        else if (typeof (amountEntered) === "string") {
+            result.innerHTML = "Enter only digits!"
+        }
+        else {
+            balance = balance - amountEntered;
+            text3.innerHTML = "<h4>#" + balance + "</h3>"
+                alert("Withdrawal Successful, your current balance is #" + balance)
+        }
+        }
+
+        function deposit () {
+            var amountEntered = Number (amount.value)
+        if (amountEntered > balance){
+            result.innerHTML= "Insuffient Fund"
+        }
+        else if (amountEntered < 0){
+            result.innerHTML= "Invalid Amount"
+        }
+        else if (amountEntered == ""){
+            result.innerHTML = "Kindly enter an amount"
+        }
+        else if (typeof (amountEntered) === "string") {
+            result.innerHTML = "Enter only digits!"
+        }
+        else {
+            balance = balance + amountEntered;
+            text3.innerHTML = "<h4>#" + balance + "</h3>"
+                alert("Deposit Successful and your current balance is #" + balance)
+        }
+        }
+
+        function account () {
+            result.innerHTML= "Welome your account number is 9013284694"
+        }
+
+        function airtime () {
+            var amountEntered = Number (amount.value)
+        if (amountEntered > balance){
+            result.innerHTML= "Insuffient Fund"
+        }
+        else if (amountEntered < 0){
+            result.innerHTML= "Invalid Amount"
+        }
+        else if (amountEntered == ""){
+            result.innerHTML = "Kindly enter an amount"
+        }
+        else if (typeof (amountEntered) === "string") {
+            result.innerHTML = "Enter only digits!"
+        }
+        else {
+            balance = balance - amountEntered;
+            text3.innerHTML = "<h4>#" + balance + "</h3>"
+                alert("Airtime purchase sucessful, your current balance is #" + balance)
+        }
+        }
+
+        function account () {
+            result.innerHTML= "Welome your account number is 9013284694"
+        }
+
+        function transfer () {
+            var amountEntered = Number (amount.value)
+        if (amountEntered > balance){
+            result.innerHTML= "Insuffient Fund"
+        }
+        else if (amountEntered < 0){
+            result.innerHTML= "Invalid Amount"
+        }
+        else if (amountEntered == ""){
+            result.innerHTML = "Kindly enter an amount"
+        }
+        else if (typeof (amountEntered) === "string") {
+            result.innerHTML = "Enter only digits!"
+        }
+        else {
+            balance = balance - amountEntered;
+            text3.innerHTML = "<h4>#" + balance + "</h3>"
+                prompt("Enter the beneficiary account details")
+                prompt("Enter the bank name")
+                alert("Your transfer is sucessfully sent, your current balance is #" + balance)
+        }
+        }
+    </script>
+
+
+
+    
+    
+</body>
+</html>

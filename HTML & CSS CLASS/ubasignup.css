@@ -1,0 +1,22 @@
+
+    form{
+    border-radius: 50px;
+    margin: 10px;
+    margin-left: 10px;
+    border: thick solid blue;
+    background-color: blue;
+    height: 500px;
+    width: 1000px;
+
+}
+input{
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 100px;
+}
+button{
+    padding: 1px;
+    background-color:red; 
+    color: white;
+    border-radius: 30px;
+}

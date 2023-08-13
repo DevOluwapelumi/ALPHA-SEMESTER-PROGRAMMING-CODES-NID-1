@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric BULB</title>
+    <link rel="stylesheet" href="./bulb.css">
+</head>
+<body>
+    <div id="output">
+        <img src="./bulb.jpg" alt="">
+    </div>
+    <div id="button">
+        <button onclick="switchOn()">ON</button>
+    </div>  
+</body>
+
+<script>
+   function switchOn() {
+       output.innerHTML = ' <img src="./bulb on.jfif" alt="">  '
+       button.innerHTML = '<button id="btn"  onclick="switchOff()"> OFF </button>'
+       btn.style.backgroundColor = 'green'
+   }
+
+   function switchOff() {
+       output.innerHTML = ' <img src="./bulb.jpg" alt="">  '
+       button.innerHTML = '<button id="btn"  onclick="switchOn()"> ON </button>'
+       btn.style.backgroundColor = 'red'
+       
+   }
+</script>
+</html>

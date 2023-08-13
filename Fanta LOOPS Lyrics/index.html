@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>\
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container w-25 shadow-lg " style="background-color: rgb(195, 185, 218); border-style: double; text-align: center; font-size: 50px; width: 300px;">
+            <div class=" justify-content-center">
+                <button class="btn btn-outline-primary" onclick="fanta()" style="padding: 10px; border-radius: 20px; width: 300px; box-shadow: 0 0 100px;">Fanta LOOPS lyrics</button>  <br>
+                <div id="disp"></div>
+            </div>
+        </div>
+
+   
+       
+    <script>
+         function fanta(){
+        for(var i = 99; i>=1; i--){
+            console.log(`${i} bottles of fanta on the wall, ${i} bottles of fanta. Take one down and pass it around, ${i-1} bottles of fanta on the wall.`)
+            disp.innerHTML = disp.innerHTML + `<h3>${i} bottles of fanta on the wall, ${i} bottles of fanta. Take one down and pass it around, ${i-1} bottles of fanta on the wall. </h3>`
+            if(i -1 == 0){
+                console.log(`No more bottles of fanta on the wall, no more  bottles of fanta. Go to rhe store and buy some more, 99 bottles of fanta on the wall.`)
+                disp.innerHTML = disp.innerHTML + `<h3> No more bottles of fanta on the wall, no more  bottles of fanta. Go to the store and buy some more, then you get the bottles of fanta on the wall.  </h3>`
+            }
+        }
+        }
+
+    </script>
+</body>
+</html>        

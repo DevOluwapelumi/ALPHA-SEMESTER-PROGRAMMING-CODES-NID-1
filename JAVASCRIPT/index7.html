@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+
+    <input type="number" placeholder="Enter your value..." class="form-control mt-2" id="myInput">
+    <!-- <button class=" btn btn-outline-primary" onclick="table()" style="padding: 10px; border-radius: 20px;">Create Multiplication Table</button>  -->
+    <button class=" btn btn-outline-primary" onclick="createEvalTable()" style="padding: 10px; border-radius: 20px;">Create Eval Table</button> 
+    <div id="disp" style="font-size: xx-large;">✔✔✔</div>
+     
+</body>
+
+       <script>
+           function createEvalTable(){
+            disp.innerHTML = ""
+               for(var i = 1; i<=12; i++){
+                   for(var j = 1; j<=12; j++){
+                    // console.log(i + " Box " + j + " Noodles ")
+                    console.log(i+"*"+j + "=" + i*j)
+                    disp.innerHTML += `<h3> ${i}  Box  ${j}  Noodles </h3>` 
+                   }
+               }
+           }
+       </script>
+</html>

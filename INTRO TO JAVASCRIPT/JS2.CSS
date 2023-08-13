@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* background-size: cover; */
+    animation-name: container;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* background-image: url(../../Pictures/sqicollege.png); */
+    /* background-color: rgb(255, 145, 0); */
+    height: 700px;
+}
+@keyframes container {
+    0% {
+        background-image: url(./fly-1.jpg);
+    }
+    40% {
+        background-image: url(./fly-1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    60% {
+        background-image: url(./89ac4696991510c2dd716548abfb78b0.gif);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url(./giphy.gif);
+        background-size: cover;
+        background-position: center;
+    }
+}

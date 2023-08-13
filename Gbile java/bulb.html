@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bulb.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="output">
+    <img src="./blue.png" alt="">
+   </div>
+   <div id="button">
+    <button id="btn" onclick="switchOn()">ON</button>
+   </div>
+    <script>
+        function switchOn () {
+            output.innerHTML = ' <img src="./blue.png" alt="">'
+            button.innerHTML = '<button onclick="switchOff()">ON</button>'
+        }
+        function switchOff () {
+            output.innerHTML = ' <img src="./green.png" alt="">'
+            button.innerHTML = '<button onclick="switchOn()">OFF</button>'
+        }
+
+
+    </script>
+</body>
+</html>

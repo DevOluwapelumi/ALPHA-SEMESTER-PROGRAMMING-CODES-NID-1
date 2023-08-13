@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<body style="background-color: yellowgreen; margin-top: 200px;">
+    <div style=" height: 500px;">
+    <h1 style="text-align: center; font-size: 50pt;">CALCULATOR</h1>
+    <div style="text-align: center;">
+    <input type="text" name="" id="firstNo" placeholder="Enter your first number here..." style="height:3vh; width: 150px;">
+    <input type="text" name="" id="secondNo" placeholder="Enter your second number here..." style="height: 3vh; width: 150px;">
+    <br> <br>
+    <button style="background-color: blue; color: aqua; padding: 20px;" onclick="add()">ADD</button>
+    <button style="background-color: green; color: aqua; padding: 20px;" onclick="subtract()">SUBTRACT</button>
+    <button style="background-color: red; color: white; padding: 20px;" onclick="divide()">DIVIDE</button>
+    <button style="background-color: red; color: white; padding: 20px;" onclick="multiply()">MULTIPLY</button>
+    <p id="result" style="background-color: rgb(37, 4, 4); color: white; font-size: 50pt; text-align: center; "></p>
+</div>
+</div> 
+    
+
+
+
+    <SCript>
+
+        function add () {
+            var first_num = firstNo.value;
+            var second_num = secondNo.value;
+            let total = Number(first_num) + Number(second_num);
+            result.innerText = total;    
+        }
+        function subtract () {
+            var first_num = firstNo.value;
+            var second_num = secondNo.value;
+            let total = Number(first_num) - Number(second_num);
+            result.innerText = total;    
+        }
+        function divide () {
+            var first_num = firstNo.value;
+            var second_num = secondNo.value;
+            var total = Number(first_num) / Number(second_num);
+            result.innerText = total;    
+        }
+        function multiply () {
+            var first_num = firstNo.value;
+            var second_num = secondNo.value;
+            var total = Number(first_num) * Number(second_num);
+            result.innerText = total;    
+        }
+        
+
+    </SCript>
+</body>
+</html>

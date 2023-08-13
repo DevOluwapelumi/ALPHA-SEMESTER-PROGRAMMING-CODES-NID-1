@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Array</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body style="background-image: url(./b3705cc2edf8f527789e6e2be29f6267.gif);">
+    <marquee behavior="alternate" direction="right" style="color: rgb(41, 218, 25); font-size: x-large; font-style: italic;">TODO MINI</marquee>
+    <div style="text-align: center; margin-top: 100px;">
+    <input type="text"  placeholder="Input the items..." id="userInput" style="width: 300px; font-size: 20px;"> <br> <br>
+    <button class="btn btn-outline-success " onclick="addTodo()" style="color: rgb(219, 151, 25);"><b> Add Todo</button>
+    <button class="btn btn-outline-danger" onclick="delAllTodo()" style="color: wheat;"><b> Delete All Todo</button>
+    <button class="btn btn-outline-warning" onclick="editTodo()" style="color: rgb(204, 145, 44);"><b> Edit a Todo</button>
+    <button class="btn btn-outline-danger" onclick="deleteTodo()" style="color: rgb(236, 155, 15);"><b> Delete a Todo</button> <br> <br>
+        <!-- <div style="text-align: center;  margin-top: 100px; background-color: black;">
+    <div id="disp" style="color: red; width: 500px; height: 100px; margin-left: auto; margin-right: auto; border: 5px solid red;"></div> 
+</div> -->
+<textarea name="" id="disp" cols="30" rows="10" style="box-shadow: 0 0 100px; color: red; background-color: black; font-size: 20px; font-style: italic;"></textarea>
+</div>
+
+</body>
+
+     <script>
+           var allTodo = []
+
+        function addTodo(){
+            if(userInput.value==""){
+                alert("Please enter something...")
+            }else{
+                allTodo.push(userInput.value);
+                userInput.value = ""
+                disp.innerHTML = `${allTodo}`
+                console.log(allTodo);
+        }
+            }
+           
+        function delAllTodo(){
+            var userResponse = confirm("Are you sure? This action is irreversible!!!")
+            // allTodo.splice(0);
+            // console.log(userResponse);
+            if(userResponse == true){
+                allTodo.splice(0)
+                console.log(allTodo)
+            }else{
+                console.log("Oriyo e")
+                console.log(allTodo)
+            }
+            disp.innerHTML = `${allTodo}`
+        }
+
+        function editTodo(){
+           var go = prompt("Which index do you want to edit?");
+           var come = prompt("What will you replace it with?");
+           if(go=="" || come==""){
+               alert("You think say you dey wise???")
+           }else{
+            allTodo.splice(go,1,come);
+            console.log(allTodo);
+            // disp.innerHTML = `<h1>${allTodo}</h1>`
+            disp.innerHTML = `${allTodo}`
+        }
+           }
+
+        function deleteTodo(){
+           var go = prompt("Which index do you want to delete?");
+           allTodo.splice(go,1);
+           console.log(allTodo);
+        //    disp.innerHTML = `<h1>${allTodo}</h1>`
+           disp.innerHTML = `${allTodo}`
+        }
+     </script>
+</html>

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: purple;
+}
+
+@keyframes box { 
+    0%{background-image: url(./omi.jpg); }
+    70%{background-image: url(./omi.jpg);}
+    100%{background-image: url(./beach.jpg);
+    }
+    
+}
+
+.one{
+    font-family: century gothic;
+    color: purple;
+}
+.box{
+    height: 60vh;
+    width: 40vw;
+    /* background-color: white; */
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 30px;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(40);
+    animation-iteration-count: infinite;
+    animation-name: box;
+    background-repeat: no-repeat;
+    background-image: cover;
+    background-size: cover;
+}
+.two{
+    margin-left: 180px;
+    padding-top: 30px;
+}

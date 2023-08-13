@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="disp">Hello</div>
+
+
+    <button onclick="playSong()">Play Song</button>
+    <script>
+         var mySong = new Audio("African-Worship.mp3")
+        function playSong(){
+            mySong.play()
+        }
+
+
+
+        var myAge = 50;
+        var myName = "Oluwapelumi💖💖✔"
+        // disp.innerHTML = "<h1>Hello</h1>"
+        // disp.innerHTML = "<h1>My age is "+ myAge + " years Old </h1><h1> My name is" + myName + "</h1>"
+
+
+        disp.innerHTML = `
+        <h1> My age is ${myAge} years old </h1>
+        <h1> My name is ${myName} </h1>
+        `
+
+
+        // for(var i=1; i<=100; i++){
+        //     console.log("Hello World "+i)
+        // }
+
+        // for(var i=100; i>=1; i--){
+        //     console.log("Hello World "+i)
+        //     // console.log(`Hello World ${i}`)
+        // }
+
+        // for(var i=1; i<=100; i++){
+        //     if(i%2==0)
+        //     console.log(i + " is an even number")
+        // }
+
+        for(var i=0; i<=100; i++){
+            if(i%2==1)
+            console.log(i + " is an odd number")
+         
+        }
+
+    </script>
+</body>
+</html>

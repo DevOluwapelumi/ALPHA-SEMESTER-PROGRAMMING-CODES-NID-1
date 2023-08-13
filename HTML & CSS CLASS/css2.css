@@ -1,0 +1,74 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 5px  solid gold;
+    text-align: center; 
+}
+h2{
+    color: purple;
+}
+form{
+    text-align: center;
+    margin-top: 100px;
+}
+
+header h1{
+margin-bottom: 10px;
+}
+header{
+    margin-bottom: 15px;
+}
+input{
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+button{
+    padding: 10px;
+    background-color: blue; 
+    color: white;
+    border: 5px solid gold;
+} */
+
+
+
+
+
+
+.parentDiv{
+    border: 3px solid red;
+    height: 500px;
+    padding: 10px;
+    margin-top: 50px;
+    width: 1500px;
+    /* background-color: hotpink;
+    background-image: linear-gradient(to top, green, blue,red,yellow,orange);
+    background-image: url(../../Pictures/Blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: buttom; */
+    /* background-color: #C03928; */
+    /* background-color: rgba(0, 0, 0, 1); */
+     background-image: linear-gradient(to right, rgba(24, 32, 100, 1) rgba(243, 156, 18, 0.3), rgba(142, 68, 173, 0.8)), url(../../Pictures/Blue.jpg);
+}
+.childDiv{
+    /* border: 2px solid green; */
+    /* width: 1400px;
+    height: 50px; */
+    /* background-color: rgba(0, 0, 0, 0.9);
+    background-color: indigo; */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

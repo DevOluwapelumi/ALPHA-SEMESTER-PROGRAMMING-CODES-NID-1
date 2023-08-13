@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid bg-danger text-center mt-5" style="border-radius: 10px;">
+        <marquee behavior="alternate" direction="right" style="font-family: 'Courier New', Courier, monospace; font-style: italic; font-size: 50px;">Enter your lover name here!!!</marquee>
+    <div style="text-align: center; margin-top: 50px;">
+        <input type="text" placeholder="Enter your name" id="first"> <br> <br>
+        <input type="text" placeholder="Enter your Lovers name" id="second"> <br> <br>
+        <button class="btn btn-success w-10" onclick="display()">Calculate your Love</button>
+        <div id="disp"></div>
+      </div>
+    </div>
+
+      <script>
+         //Random Matric Numbers
+        // Math.random() gives Numbers between 0 and 1
+        // var randomNumber = Math.round(Math.random()*100) 
+        //  disp.innerHTML =x `<h1>${randomNumber}%</h1>`
+        function display(){
+            var userInput = first.value
+            var userLover = second.value
+            var randomNumber = Math.round(Math.random()*100) 
+            disp.innerHTML = `<h1> Your Love percentage is ${randomNumber}%, I Doubt this can work-out</h1>`    
+        }
+        // else{
+        //     disp.innerHTML = `<h1> Your Love percentage is ${randomNumber}%</h1>`   
+        // }
+
+        // Date---
+        var myDate = new Date()
+        console.log(myDate)
+    </script>
+    
+    
+</body>
+</html>

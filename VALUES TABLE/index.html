@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Multiplication</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body style="background-image: url(./b3705cc2edf8f527789e6e2be29f6267.gif); background-size: 50px;" >
+    <style>
+        body{
+            text-align: center;
+        }
+        table{
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    <div style="text-align: center;">
+        <div class="row mt-5 mx-auto" style="width: 500px;">
+            <div class="col-md-6 col-3 ">
+        <input type="number" placeholder="ROW..." class="form-control mb-5" id="row"></div>
+        <div class="col-md-6  col-3">
+        <input type="number" placeholder="COLUMN..." class="form-control mb-5" id="col"></div>
+    </div>
+    <button class="btn btn-outline-secondary" onclick="add()" style="padding: 10px; border-radius: 20px; width: 100px; color: rgb(255, 0, 85);"><b>Addition</button>
+    <button class="btn btn-outline-primary" onclick="subtract()" style="padding: 10px; border-radius: 20px; width: 100px; color: rgb(0, 255, 55);"><b> Subtraction</button> 
+    <button class="btn btn-outline-success" onclick="multiply()" style="padding: 10px; border-radius: 20px; width: 100px; color: rgb(0, 255, 55);"><b> Multiplication</button> 
+    <button class="btn btn-outline-danger" onclick="divide()" style="padding: 10px; border-radius: 20px;  width: 100px; color: rgb(0, 255, 55);"><b>Division</button>  <br> <br>
+        <div id="disp" style="color: red;"></div> 
+</div> 
+</body>
+
+    <script>
+
+function add(){
+    disp.innerHTML = ""
+    var r = row.value;
+    var c = col.value;
+
+    table="<table>"
+        for(var i = 1; i<=r; i++){
+            table += "<tr>"
+
+            for(var j = 1; j<=c; j++){
+                total=j+i
+                table += `<td style="border:2px solid rgb(0, 255, 55)"> ${j}+${i} =${total}</td>`
+            }
+            table += "</tr>" 
+        }
+            table += "</table>"
+            disp.innerHTML = table
+        }
+
+
+function subtract(){
+    disp.innerHTML = ""
+    var r = row.value;
+    var c = col.value;
+
+    table="<table>"
+        for(var i = 1; i<=r; i++){
+            table += "<tr>"
+
+            for(var j = 1; j<=c; j++){
+                total=j-i
+                table += `<td style="border:2px solid rgb(0, 255, 55)"> ${j}-${i} =${total}</td>`
+            }
+            table += "</tr>" 
+        }
+            table += "</table>"
+            disp.innerHTML = table
+        }
+
+function multiply(){
+    disp.innerHTML = ""
+    var r = row.value;
+    var c = col.value;
+
+    table="<table>"
+        for(var i = 1; i<=r; i++){
+            table += "<tr>"
+
+            for(var j = 1; j<=c; j++){
+                total=j*i
+                table += `<td style="border:2px solid rgb(0, 255, 55)"> ${j}x${i} =${total}</td>`
+            }
+            table += "</tr>" 
+        }
+            table += "</table>"
+            disp.innerHTML = table
+    }
+
+function divide(){
+    disp.innerHTML = ""
+    var r = row.value;
+    var c = col.value;
+
+    table="<table>"
+        for(var i = 1; i<=r; i++){
+            table += "<tr>"
+
+            for(var j = 1; j<=c; j++){
+                total=j/i
+                table += `<td style="border:2px solid rgb(0, 255, 55)"> ${j}/${i} =${total}</td>`
+            }
+            table += "</tr>" 
+        }
+            table += "</table>"
+            disp.innerHTML = table
+        }
+    </script>
+</html>

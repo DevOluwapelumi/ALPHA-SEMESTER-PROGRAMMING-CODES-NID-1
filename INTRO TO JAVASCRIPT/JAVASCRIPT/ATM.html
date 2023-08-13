@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM MACHINE</title>
+    <link rel="stylesheet" href="./ATM.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container w-25 mt-5" style="background-color: brown; height: 570px; text-align: center; font-size: 50px;">ATM MACHINE
+        <P id="result" style="font-size: 50pt; text-align: center;"></P>
+        <input type="text" name="" id="firstNo" placeholder="RESULT..." class="form-control  mb-5 w-0 " id="scoreInput">
+       
+        
+        <div>
+            <div style="background-color: black; height: 410px;">
+    <button>  <input type="text" name="" id="secondNo" placeholder="Enter..." class="form-control " id="scoreInput" class="btn btn-outline-red" style="background-color: white; color: black; width: 100px; height: 50px; margin-left: 0px; border-radius: 50px; font-size: 20px; "></button>
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="add()">+</button> 
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="subtract()">-</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">0</button> <br>
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 100px; height: 40px; margin-left: 0px; border-radius: 50px; font-size: 20px; " onclick="balance()">BALANCE</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 00px; border-radius: 10px; font-size: 40px; " onclick="()">1</button>
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">2</button>
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">3</button>  <br>
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 100px; height: 40px; margin-left: 0px; border-radius: 50px; font-size: 15px; " onclick="withdraw()">WITHDRAW</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 00px; border-radius: 10px; font-size: 40px; " onclick="()">4</button>
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: px; border-radius: 10px; font-size: 40px; " onclick="()">5</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: px; border-radius: 10px; font-size: 40px; " onclick="()">6</button> 
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 100px; height: 40px; margin-left: 0px; border-radius: 50px; font-size: 20px; " onclick="deposit()">DEPOSIT</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 00px; border-radius: 10px; font-size: 40px;  " onclick="()">7</button>
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">8</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">9</button> <br>
+    <button class="btn btn-outline-red" style="background-color: white; color: black; width: 100px; height: 40px; margin-left: 0px; border-radius: 50px; font-size: 18px; " onclick="transfer()">TRANSFER</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 00px; border-radius: 10px; font-size: 40px; " onclick="()">#</button> 
+    <button class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="()">,</button> 
+    <button class="btn btn-outline-primary" class="btn btn-outline-primary" style="background-color: white; color: black; width: 70px; height: 70px; margin-left: 0px; border-radius: 10px; font-size: 40px; " onclick="add()">$</button> 
+</div>
+</div>
+</div>
+</div>
+ 
+    
+
+
+
+    <script>
+        var balance = 10000
+        function withdraw() {
+            var withdraw_input = Number(scoreInput.value)
+            if(1 > withdraw_input){
+                traval.innerText = "Enter amount"
+            }
+            else if(withdraw_input ===""){
+                traval.innerText = "in amount"
+            }
+            else if(balance < withdraw_input){
+                traval.innerText = "Insufficient fund"
+            }
+            else if(balance > 0){
+                money.innerText = balance - withdraw_input;
+                balance = balance - withdraw_input;
+                traval.innerText = "successful withdraw"
+            }
+                }
+        // var id = 10000;
+        // let balance = 10000
+        // console.log(id)
+
+        // function withdraw(){
+        //     var balance = 10000
+        //     output.innerText = 'Enter amount to withdraw'
+        //     id = 1  
+        // }
+        // function deposit(){
+        //     output.innerText = 'Enter amount to deposit'
+        //     id = 2  
+        // }
+        // function transfer(){
+        //     output.innerText = 'Enter amount to transfer'
+        //     id = 3  
+        // }
+        // var balance = 10000
+        // function withdraw(){
+        //     var userInput = input.value
+        //     if(balance > scoreInput) {
+        //     var total = Number(balance) - Number(scoreInput)
+        //     output.innerText = 'Successful';
+        //     balance = total;
+        //     } else {
+        //         output.innerText = 'Insufficient Fund'
+        //     }
+        //     input.value = ''
+        //     }
+        //     function calculatedeposit(){
+        //     var userInput = input.value
+        //     if(balance > userInput) {
+        //     var total = Number(balance) + Number(userInput)
+        //     output.innerText = 'Successful';
+        //     balance = total;
+        //     } else {
+        //         output.innerText = 'Please enter amount to deposit'
+        //     }
+        //     input.value = ''
+        //     }
+        //     function calculatetransfer(){
+        //     var userInput = input.value
+        //     if(balance > userInput) {
+        //     var total = Number(balance) - Number(userInput)
+        //     output.innerText = 'Successful';
+        //     balance = total;
+        //     } else {
+        //         output.innerText = 'Insufficient Fund'
+        //     }
+        //     input.value = ''
+        //     }
+
+
+        //     function calculate(){
+        //         if(id == 0) {
+        //             output.inputText = 'Please select option'
+        //             output.style.fontsize = '30px'
+        //         } else if(id ==1) {
+        //             calculateWITHDRAW()
+        //         } else if(id ==2) {
+        //             calculateDEPOSIT()
+        //         } else if(id ==3) {
+        //             calculateTRANSFER()
+        //         }     
+        //     }
+        // function add () {
+        //     var first_num = firstNo.value;
+        //     var second_num = secondNo.value;
+        //     let total = Number(first_num) + Number(second_num);
+        //     result.innerText = total;    
+        // }
+        // function subtract () {
+        //     var first_num = firstNo.value;
+        //     var second_num = secondNo.value;
+        //     let total = Number(first_num) - Number(second_num);
+        //     result.innerText = total;    
+        // }
+
+    </script>
+
+
+
+    <script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+</body>
+</html>

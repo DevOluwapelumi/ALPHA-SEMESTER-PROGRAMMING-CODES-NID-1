@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+img {
+    width: 200px;
+}
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px 40px;
+    font-size: 'Baloo Bhai 2';
+}
+button:active {
+    transform: scale(0.9);
+}

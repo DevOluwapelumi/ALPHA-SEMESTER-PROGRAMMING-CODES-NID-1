@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="./Ass3.css">
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body style="background-color: lawngreen;">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-md-4 mx-auto mt-5 ">
+                <div class=" shadow bg-light pb-2 ps-3 pe-5 pt-5 border- rounded animate mt-5"> 
+                    <marquee behavior="" direction="">INPUT YOUR SCORE FOR GRADING HERE!!!</marquee>
+                    <h1 class="text-center text-primary display-6 p-5 mt-5"><b>GRADE SYSTEM</h1>
+                    <div class="justify-content-center">
+                            <input type="text" placeholder="Enter your score..." class="form-control mb-5 w-0 " id="scoreInput">
+                        </div>
+                            <div class="row justify-content-center">
+                    <button class="w-25 btn btn-outline-primary" style="padding: 10px; border-radius: 10px;" onclick="grade()">GRADE</button>
+                </div>
+                <P id="result" style="font-size: 30pt; text-align: center;"></P>
+                </div>
+            </div>
+        </div>
+    
+
+
+
+    <script>
+
+
+
+function grade(){
+            var scores = scoreInput.value;
+
+
+            if (typeof scores === 0){
+                result.innerText = "Please input your score+."
+                result.style.color = "blue"
+            }
+            else if (typeof scores === 'string') {
+            result.innerText = " Input erorr!!!"
+            result.style.color = "blue"
+           }
+            if (scores > 0 && scores <= 25){
+                var song = new Audio 
+                result.innerText = "FAILED!!!"
+                result.style.color = "red"
+                song.play()
+            }else if (scores > 25 && scores <= 40 ){
+                result.innerText = "POOR!!!"
+                result.style.color = "purple"
+            }else if (scores > 40 && scores <= 60 ){
+                result.innerText = "GOOD!!!"
+                result.style.color = "blue"
+            }else if (scores > 60 && scores <= 75){
+                result.innerText = "VERY GOOD!!!"
+                result.style.color = "blue"
+            }else if (scores > 75 && scores <= 100){
+                result.innerText = "EXCELLENT!!!"
+                result.style.color = "green"
+            }
+            
+            if (scores > 100){
+                result.innerText = "NO RESULT!!!"
+                result.style.color = "red"
+           }
+        }
+
+    </script>
+
+
+<script src="./bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>

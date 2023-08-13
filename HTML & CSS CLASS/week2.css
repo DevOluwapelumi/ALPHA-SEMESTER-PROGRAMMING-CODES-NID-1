@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 2px 30px;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{
+    margin-left: 50px;
+}
+.link{
+    background-color: blue;
+    align-items: center;
+    display: flex;
+}
+.navlinks{
+    text-decoration: none;
+    color: grey;
+}
+button{
+    border-radius: 50px;
+    padding: 1px 5px;
+    color: white;
+    margin: 10px;
+    background-color: blue;
+}
+button:hover{
+    color: red;
+}
+.row1{
+    display: flex;
+    padding: 2px;
+    flex-direction: column-reverse;
+    width: 1580px;
+    height: 500px;
+    border: 2px solid;
+    background-image: url(../../Pictures/inside\ pics.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.box {
+    color: red;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+/* .row2{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.one, .two, .three{
+    width: 520px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+.one{
+    display: flex;
+    padding: 2px;
+    flex-direction: column-reverse;
+    background-image: url(../../Pictures/inside\ pics.jpg);
+}
+.two{
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(../../Pictures/Capture\ copy.jpg);
+    background-position: center;
+}
+.three{
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    background-image: url(../../Pictures/Capture2.PNG);
+    background-position: center;
+}
+.row3{
+    height: 300px;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+}
+.on, .tw {
+    margin-top: 10px;
+    border: 2px solid;
+}
+.on{
+    display: flex;
+    padding: 2px;
+    flex-direction: column-reverse;
+    width: 520px;
+    background-image: url(../../Pictures/Red.jpg);
+}
+.tw{
+    display: flex;
+    padding: 2px;
+    flex-direction: column-reverse;
+    width: 1050px;
+    background-image: url(../../Pictures/Blue.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.row4{
+    height: 300px;
+    display: grid;
+    grid-template-columns:  repeat(2, 1fr);
+}
+.up, .down {
+    margin-top: 10px;
+    border: 2px solid;
+}
+.up{
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 1055px;
+    background-image: url(../../Pictures/Red.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.down{
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 10px;
+    width: 520px;
+    background-image: url(../../Pictures/Red1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */

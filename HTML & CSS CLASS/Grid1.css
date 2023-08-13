@@ -1,0 +1,15 @@
+body{
+    height: 6.5in;
+    /* background-image: linear-gradient(to bottom, purple, pink 200%); */
+    background-repeat: no-repeat;   
+}
+.container{
+    width: 10in;
+    border: 1px solid;
+    height: 3in;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: grey;
+}
+.box[
+]

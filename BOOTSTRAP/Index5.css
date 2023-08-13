@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animate {
+    animation-name: animate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-image: url(../../Pictures/sqicollege.png);
+}
+@keyframes animate {
+    4% {
+        background-image: url(./Picture\ 8.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    60% {
+        background-image: url(./Picture\ 9.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    100% {
+        background-image: url(./Picture\ 7.jpg);
+        background-size: cover;
+        background-position: center;
+    }

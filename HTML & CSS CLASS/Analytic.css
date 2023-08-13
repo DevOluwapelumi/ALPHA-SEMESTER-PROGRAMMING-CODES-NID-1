@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Google {
+    font-size: 30px;
+}
+.parent {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.email {
+    margin-right: 30px;
+}
+.para {
+    background-color: orange;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+.hero {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.hero img {
+    width: 800px;
+    height: 500px;
+}
+.text {
+    padding-left: 90px;
+    padding-top: 100px;
+}
+.text p {
+    margin-top: 50px;
+    width: 500px;
+    font-size: 24px;
+    color: rgb(172, 162, 162);
+}
+.card {
+    min-height: 6in;
+    background-color: rgb(69, 150, 241);
+}

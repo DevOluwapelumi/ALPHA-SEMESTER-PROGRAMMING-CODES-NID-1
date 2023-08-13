@@ -1,0 +1,44 @@
+.daddyDiv{
+    border-radius: 50px;
+    border: 3px solid red;
+    height: 500px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 400px;
+    width: 600px;
+    background-color: green;
+    background-image: linear-gradient(to top, rgba(24, 32, 100, 1), rgba(18, 243, 48, 0.3), rgba(154, 173, 68, 0.8)), url(../../Pictures/Blue.jpg);
+}
+.mummyDiv{
+    border-radius: 50px;
+    border: 3px solid red;
+    height: 450px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 400px;    
+    width: 600px;
+    background-color: white;
+    background-image: linear-gradient(to right, rgba(211, 126, 14, 0.3), rgba(68, 173, 77, 0.8)), url(../../Pictures/Green.jpg);
+}
+.daughterDiv{
+    border-radius: 50px;
+    border: 3px solid red;
+    height: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 400px;   
+    width: 600px;
+    background-color: green;
+    background-image: linear-gradient(to bottom, rgba(24, 32, 100, 1), rgba(211, 158, 14, 0.3), rgba(173, 68, 68, 0.8)), url(../../Pictures/Red.jpg);
+}
+.sonDiv{
+    border-radius: 50px;
+    border: 3px solid red;
+    height: 350px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 400px;   
+    width: 600px;
+    background-color: white;
+    background-image: linear-gradient(to top, rgba(24, 32, 100, 1), rgba(21, 170, 207, 0.3), rgba(170, 173, 12, 0.8)), url(../../Pictures/Yellow.jpg);
+} 

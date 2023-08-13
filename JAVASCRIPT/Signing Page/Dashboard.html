@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+  <center>
+    <marquee behavior="alternate" direction="right"><h1> Oluwapelumi's Nursery and Primary School </h1> </marquee>
+</center>
+     <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <input type="text" placeholder="Enter your Firstname" class="form-control my-2"  style="border-radius: 30px;" id="firstNew"> <br>
+            <input type="text" placeholder="Enter your Lastname" class="form-control my-2" style="border-radius: 30px;" id="lastNew"> <br>
+            <input type="email" placeholder="Enter your Email" class="form-control my-2" style="border-radius: 30px;" id="emailNew"> <br>
+            <input type="password" placeholder="Enter your Password" class="form-control my-2" style="border-radius: 30px;" id="passwordNew"> <br>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="editStudent()">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <table id="display" class="table table-striped">
+
+    <tr class="text-center">
+        <th><b>S/N</th> 
+        <th><b>First Name</th>     
+        <th><b>Last Name</th>     
+        <th><b>Email</th>     
+        <th><b>Password</th>     
+        <th><b>Action</th>  
+     </tr>
+    </table>
+    <script src="Dashboard.js"></script>
+    <script src="SignUp.js"></script>
+    <script src="SignIn.js"></script>    
+</body>
+</html>

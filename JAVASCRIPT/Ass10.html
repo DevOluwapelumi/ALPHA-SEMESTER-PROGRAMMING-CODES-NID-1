@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container mt-5" style="background-color: black; height: 765px; width: 400px; text-align: center; font-size: 20px; border-radius: 30px; box-shadow: 0 5px 20px;"><b> KAI  SCIENTIFIC CALCULATOR
+        <input type="text" name="" class="form-control" placeholder="0" id="myInput" style="height: 50px; font-size: 30px;">
+        <div class="mt-3">
+    <button class="btn btn-outline-primary fs-1" style="width: 150px; height: 70px; border-radius: 50px; background-color: greenyellow;" onclick="myInput.value+='Shift'">Shift</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: palegoldenrod;" onclick="myInput.value=''">DEL</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: palegoldenrod;" 
+    onclick="allDel()">AC</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('7')" style="width: 70px; height: 70px; border-radius: 50px;">7</button>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('8')" style="width: 70px; height: 70px; border-radius: 50px;">8</button> 
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('9')" style="width: 70px; height: 70px; border-radius: 50px;">9</button> 
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+= '+'" >+</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='-'" >-</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('4')" style="width: 70px; height: 70px; border-radius: 50px;">4</button>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('5')" style="width: 70px; height: 70px; border-radius: 50px;" >5</button>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('6')" style="width: 70px; height: 70px; border-radius: 50px;">6</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='*'">x</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='/'">&#247</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('1')" style="width: 70px; height: 70px; border-radius: 50px;">1</button>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('2')" style="width: 70px; height: 70px; border-radius: 50px;">2</button>
+    <button class="btn btn-outline-primary fs-1"  onclick="displaySmtn('3')" style="width: 70px; height: 70px; border-radius: 50px;">3</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='y'">yⁿ</button>  
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='*'">x²</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" onclick="displaySmtn('0')" style="width: 70px; height: 70px; border-radius: 50px;">0</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px;" onclick="myInput.value+='#'">#</button> 
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px;" onclick="myInput.value+='$'">$</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='.'">.</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='!'">!</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px;" onclick="myInput.value+='('">(</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px;" onclick="myInput.value+=')'">)</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px;" onclick="myInput.value+='('">(</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+='π'">π</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;"  onclick="myInput.value = eval(myInput.value)">=</button> <br> <br>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: palegoldenrod; background-color: palegoldenrod;" onclick="myInput.value+='Log'">Log</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: palegoldenrod; background-color: palegoldenrod;" onclick="myInput.value+='Exp'">Exp</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: palegoldenrod;" onclick="myInput.value+='Ans'">Ans</button>
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;" onclick="myInput.value+= '%'" >%</button> 
+    <button class="btn btn-outline-primary fs-1" style="width: 70px; height: 70px; border-radius: 50px; background-color: orange;"  onclick="myInput.value = eval(myInput.value)">=</button> <br> <br>
+    <div id="disp"></div>
+</div>
+    </div>
+        
+
+
+    
+    <script>
+        function displaySmtn(parameter){
+                console.log(parameter)
+            myInput.value  += parameter
+            }
+            function allDel(){
+           myInput.value = myInput.value.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

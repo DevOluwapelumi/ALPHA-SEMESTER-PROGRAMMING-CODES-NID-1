@@ -1,0 +1,110 @@
+header{
+    background-color: yellowgreen;
+}
+header img{
+    display: none;
+}
+#hero div:nth-child(1){
+    width: 100%;
+}
+#hero {
+    display: block;
+    position: relative;
+}
+
+#hero div:nth-child(2) {
+    width: 100%;
+}
+#courses-section {
+    background-color: #4285F4;
+    min-height: auto;
+    padding: 1px 50px;
+}
+
+#courses {
+    display: block;
+}
+
+.course-list {
+    margin-top: 10px;
+    min-height: 300px;
+    width: 100%;
+}
+.course-list a {
+    margin-top: -30px;
+}
+
+.instructors {
+    display: block;
+    margin: 10px;
+}
+.instructors img{
+    display: none
+}
+
+
+.para{
+    margin-left: 30px;
+}
+/* .instructors div {
+} */
+
+.instructors div h2 {
+    /* border-bottom: 2px solid #aaa; */
+    padding: 0 1.5em;
+}
+.para1{
+    margin-left: 40px;
+    font-size: 1.875em;
+    font-weight: lighter;
+    font-family: roboto, helvectic neue, sans-serif;
+}
+.para2{
+    padding-left:45px;
+}
+.container{
+    padding-top:20px;
+    min-height: 8.5in;
+}
+.box{
+    background-color: #F2F2F2;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    padding-top: 10px;
+    height: 180px;
+    width: 290px;
+    box-shadow: 2px black;
+
+}
+.parent{
+    display: block;
+    gap: 14px;
+    
+}
+.chld1 img{
+    margin-left: 110px;
+    margin-top: 10px;
+    width: 60px;
+}
+
+#card{
+    min-height: 13in;
+    margin-top: 20px;
+    background-color: wheat;
+}
+
+.last{
+    margin-top: -770px;
+    display: block;
+    grid-template-columns: repeat(1fr);
+}
+.items{
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+.items img{
+    padding-left: 110px;
+    padding-top: 30px;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>\
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+    
+</head>
+<body>
+    <div class="container w-50 shadow-lg " style="background-color: rgb(195, 185, 218); border-style: double; text-align: center; font-size: 50px;">
+            <div class=" justify-content-center">
+                <div id="disp"></div>
+                <button class="btn btn-outline-primary" onclick="fizzbuzz()" style="padding: 10px; border-radius: 20px; width: 300px;">fizz buzz</button>  <br>
+                <button class="btn btn-outline-primary" onclick="odd()" style="padding: 10px; border-radius: 20px; width: 300px;">odd number</button>  <br>
+                <button class="btn btn-outline-primary" onclick="fanta()" style="padding: 10px; border-radius: 20px; width: 300px;">fanta bottle</button>  <br>
+                <button class="btn btn-outline-primary" onclick="factorial()" style="padding: 10px; border-radius: 20px; width: 300px;">factorial</button>  <br>
+                <button class="btn btn-outline-primary" onclick="multiply()" style="padding: 10px; border-radius: 20px; width: 300px;">Multiplication</button>  <br>
+            </div>
+        </div>
+
+   
+        <input type="text">
+        <button>Create Multiplication Table</button>
+        <table border="1" class="ms-5 mt-5">
+            <tr>
+                <td>2*1= 2</td>
+            </tr>
+            <tr>
+                <td>2*2= 4</td>
+            </tr>
+            <tr>
+                <td>2*3= 6</td>
+            </tr>
+            <tr>
+                <td>2*4= 8</td>
+            </tr>
+            <tr>
+                <td>2*5= 10</td>
+            </tr>
+            <tr>
+                <td>2*6= 12</td>
+            </tr>
+            <tr>
+                <td>2*7= 14</td>
+            </tr>
+            <tr>
+                <td>2*8= 16</td>
+            </tr>
+            <tr>
+                <td>2*9= 18</td>
+            </tr>
+            <tr>
+                <td>2*10= 20</td>
+            </tr>
+            <tr>
+                <td>2*11= 22</td>
+            </tr>
+            <tr>
+                <td>2*12= 24</td>
+            </tr>
+               
+        </table>
+
+
+
+
+    <script>
+//         // fizz buzz
+//         for(var i=0; i<=100; i++){
+//      if(i%3 == 0 && i%5 == 0){
+//         console.log(i + " it is fizz buzz")
+//     }else if(i%3 == 0){
+//         console.log(i + " it is fizz")
+//     }else if(i%5 == 0){
+//         console.log(i + " it is buzz");
+//     }
+// }
+
+//          //odd number
+//         for(var i=0; i<=100; i++){
+//             if(i%2==1)
+//             console.log(i + " is an odd number")
+//         }
+
+
+         //fanta bottle
+
+
+         function fanta(){
+        for(var i = 99; i>=1; i--){
+            console.log(`${i} bottles of fanta on the wall, ${i} bottles of fanta. Take one down and pass it around, ${i-1} bottles of fanta on the wall.`)
+            disp.innerHTML = disp.innerHTML + `<h3>${i} bottles of fanta on the wall, ${i} bottles of fanta. Take one down and pass it around, ${i-1} bottles of fanta on the wall. </h3>`
+            if(i -1 == 0){
+                console.log(`No more bottles of fanta on the wall, no more  bottles of fanta. Go to rhe store and buy some more, 99 bottles of fanta on the wall.`)
+                disp.innerHTML = disp.innerHTML + `<h3> No more bottles of fanta on the wall, no more  bottles of fanta. Go to the store and buy some more, then you get the bottles of fanta on the wall.  </h3>`
+            }
+        }
+        }
+
+        function multiply(){
+            for(var i = 1; i<=12; i++){
+                console.log(`12*${i} = ${i*12}`)
+                disp.innerHTML = disp.innerHTML + ` <h1> 12*${i} = ${i*12} </h1>`
+            }
+        }
+  
+
+// //factorial
+//         for(num = 1; num < 101; num++) {
+//             var number = 1;
+//             if (num == 0 || num == 1){
+//                 console.log(`The factorial of ${num} is + ${answer}`);
+//             }else {
+//                 for(var i = num; i>= 1; i--){
+//                     answer = answer * i;
+//                 }
+//                 console.log(`The factorial of ${num} is  ${answer}`);
+//             }
+//         }
+   
+    </script>
+</body>
+</html>        

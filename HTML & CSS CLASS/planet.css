@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    margin-top: 300px;
+}
+.parent {
+    border: 1px solid white;
+    border-radius: 500px;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+}
+@keyframes child {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes mercury{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.child img {
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 40vh;
+    position: absolute;
+    top: 460px;
+    left: 520px;
+}
+.mercury img {
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 450px;
+    left: 540px;
+    position: absolute;
+    height: 25px;
+}
+.div2 {
+    top: 340px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid;
+    border-radius: 2000px;
+    position: absolute;
+    left: 440px;
+}
+.venus img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 80px;
+    position: absolute;
+    top: 670px;
+    left: 430px;
+}
+.div3 {
+    top: 300px;
+    width: 600px;
+    height: 580px;
+    border: 1px solid;
+    border-radius: 2000px;
+    position: absolute;
+    left: 390px;
+}
+.earth img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 65px;
+    position: absolute;
+    top: 750px;
+    left: 900px;
+}
+.div4 {
+    top: 266px;
+    width: 700px;
+    height: 680px;
+    border: 1px solid white;
+    border-radius: 2000px;
+    position: relative;
+    left: 350px;
+}
+.mars img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    position: absolute;
+    bottom: 40px;
+    left: 986px;
+}
+.div5 {
+    top: 266px;
+    width: 800px;
+    height: 780px;
+    border: 1px solid white;
+    border-radius: 2000px;
+    position: absolute;
+    left: 350px;
+}
+.jupiter img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    position: absolute;
+    bottom: 40px;
+    left: 270px;
+}
+.div6 {
+    top: 225px;
+    width: 900px;
+    height: 880px;
+    border: 1px solid white;
+    border-radius: 2500px;
+    position: absolute;
+    left: 307px;
+}
+.saturn img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 90px;
+    position: relative;
+    top: 40px;
+    left: 1060px;
+}
+.div7 {
+    top: 180px;
+    width: 1000px;
+    height: 980px;
+    border: 1px solid white;
+    border-radius: 2500px;
+    position: absolute;
+    left: 260px;
+}
+.uranus img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    position: relative;
+    top: 246px;
+    left: 800px;
+}
+.div8 {
+    top: 105px;
+    width: 1100px;
+    height: 1080px;
+    border: 1px solid white;
+    border-radius: 2500px;
+    position: absolute;
+    left: 170px;
+}
+.neptune img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 70px;
+    position: relative;
+    top: 200px;
+    left: 470px;
+}
+.div9 {
+    top: 266px;
+    width: 1200px;
+    height: 11800px;
+    border: 1px solid white;
+    border-radius: 2000px;
+    position: absolute;
+    left: 350px;
+}
+.pluto img{
+    animation-name: child;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    height: 65px;
+    position: absolute;
+    top: 750px;
+    left: 900px;
+}

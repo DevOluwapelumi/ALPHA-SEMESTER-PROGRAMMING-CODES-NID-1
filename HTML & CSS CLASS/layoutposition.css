@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    /* border: thick solid rgb(226, 15, 15); */
+    background-color: rgb(112, 32, 32);
+    position: sticky;
+}
+header nav ul {
+    /* border: thick solid rgb(226, 15, 15); */
+    margin: 50px;
+    /* margin-top: 10px; */
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+li {
+    /* border: inherit; */
+    margin: inherit;
+    /* display: inline-block; */
+}
+a {
+    text-decoration: none;
+    color: rgb(24, 21, 21);
+    font-family: cursive;
+    font-size: 1.5em;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign~in</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid bg-danger mt-5" style="border-radius: 10px;">
+        <div class="row" style="color: red; box-shadow: 0 30px 10px;">
+            <div class="col-10 mx-auto shadow-sm mt-5 bg-warning" style="box-shadow: 0 0 20px; border-radius: 30px;">
+                <h1 style="text-align: center;color: black;"> <marquee behavior="alternate" direction="right"> Sign In Page </marquee> </h1>
+                <label class="form-label" style="font-style: italic;"><b> Email</label>
+                    <input type="email" placeholder="Enter your Email" class="form-control my-2" style="border-radius: 30px;" id="signInEmail"> <br>
+                    <label class="form-label" style="font-style: italic;"><b> Password</label>
+                    <input type="password" placeholder="Enter your Password" class="form-control my-2" style="border-radius: 30px;" id="signInPassword"> <br>
+                    <input type="checkbox" name="">
+                    <label class="form-label" style="font-style: italic;">Accept the Terms and Conditions</label>
+                <button class="btn btn-success my-2 w-100" onclick="display2()">Sign In</button>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+    <script src="SignIn.js"></script>    
+    <script src="SignUp.js"></script>
+
+</body>
+</html>

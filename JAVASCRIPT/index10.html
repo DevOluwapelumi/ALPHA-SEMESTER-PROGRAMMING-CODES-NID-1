@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameterized Function</title>
+</head>
+<body>
+     <input type="text" id="myInput"> <br> <br>
+     <!-- <button onclick="pressOne()">1</button>
+     <button onclick="pressTwo()">2</button> -->
+     <button onclick="displaySmtn('1','Victor')">1</button>
+     <button onclick="displaySmtn('2','Damilola')">2</button>
+     <button onclick="displaySmtn('3','Ifeoluwa')">3</button>
+     <button onclick="displaySmtn('4')">4</button>
+     <button onclick="displaySmtn('5')">5</button>
+     <button onclick="displaySmtn('6')">6</button>
+     <button onclick="displaySmtn('7')">7</button>
+     <button onclick="displaySmtn('8')">8</button>
+     <button onclick="displaySmtn('9')">9</button>
+     <button onclick="displaySmtn('0')">0</button>
+</body>
+        <script>
+            //ZERO PARAMETER-------
+            // function pressOne(){
+            //     myInput.value  += "1"
+            // }
+            // function pressTwo(){
+            //     myInput.value  += "2"
+            // }
+            //ONE PARAMETER-----
+            // function displaySmtn(parameter){
+            //     console.log(parameter)
+            // myInput.value  += parameter
+            // }
+            //TWO PARAMETER------
+            function displaySmtn(parameterOne,parameterTwo){
+                console.log(parameterOne,parameterTwo)
+            myInput.value  += parameterOne + parameterTwo
+            }
+        </script>
+</html>

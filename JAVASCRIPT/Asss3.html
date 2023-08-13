@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="bootstrap-5.2.2-dist/bootstrap-5.2.2-dist/css/bootstrap.css">
+</head>
+<body style="background-color: black;">
+    <div class="container w-50 shadow-lg">
+    <marquee behavior="alternate" direction="" style="color: white; font-size: 20px; font-style: italic;">Black Market Currency Converter</marquee>
+</div>
+    <div class="container w-25  " style="background-color: rgb(195, 185, 218); border-style: double; text-align: center; font-size: 50px; height: 750px;">
+        <div class=" justify-content-center">
+            <button class=" btn btn-outline-secondary" onclick="convertDollarToNaira()" style="padding: 10px; border-radius: 20px; width: 300px;">Dollar to Naira</button>  <br> 
+            <button class=" btn btn-outline-primary" onclick="convertNairaToDollar()" style="padding: 10px; border-radius: 20px; width: 300px;">Naira to Dollar</button>  <br> 
+            <button class=" btn btn-outline-secondary" onclick="convertNairaToEuro()" style="padding: 10px; border-radius: 20px; width: 300px;">Naira to Euro</button>  <br> 
+            <button class=" btn btn-outline-primary" onclick="convertEuroToNaira()" style="padding: 10px; border-radius: 20px; width: 300px;">Euro to Naira</button>  <br> 
+            <button class=" btn btn-outline-secondary" onclick="convertNairaToSterling()" style="padding: 10px; border-radius: 20px; width: 300px;">Naira to Sterling</button>  <br> 
+            <button class=" btn btn-outline-primary" onclick="convertSterlingTonaira()" style="padding: 10px; border-radius: 20px; width: 300px;">Sterling to Naira</button>  <br> 
+            <button class=" btn btn-outline-secondary" onclick="convertNairaToKuwaitiDinar()" style="padding: 10px; border-radius: 20px; width: 300px;">Naira to KuwaitiDinar</button> <br> 
+            <button class=" btn btn-outline-primary" onclick="convertKuwaitiDinarToNaira()" style="padding: 10px; border-radius: 20px; width: 300px;  ">KuwaitiDinar to Naira</button> <br>
+            <button class=" btn btn-outline-secondary" onclick="convertDollarToEuro()" style="padding: 10px; border-radius: 20px; width: 300px;">Dollar to Euro</button>  <br>
+            <button class=" btn btn-outline-primary" onclick="convertEuroToDollar()" style="padding: 10px; border-radius: 20px; width: 300px;">Euro to Dollar</button>  <br>  
+   
+    
+        </div> 
+</div>
+
+
+     <script>
+         function convertDollarToNaira (){
+             var currency = prompt("Enter amount")
+             var naira = 745;
+             var totalNaira = currency * naira
+             alert("₦" +totalNaira)
+         }
+
+         function convertNairaToDollar (){
+             var currency = prompt("Enter amount")
+             var dollar = 745;
+             var totalDollar = currency / dollar 
+             alert("$" +totalDollar)
+         }
+
+         function convertNairaToEuro (){
+             var currency = prompt("Enter amount")
+             var euro = 740;
+             var totalEuro = currency * euro
+             alert("€" +totalEuro)
+         }
+
+         function convertEuroToNaira (){
+             var currency = prompt("Enter amount")
+             var naira = 740;
+             var totalNaira = currency / naira
+             alert("₦" +totalNaira)
+         }
+
+         function convertNairaToSterling (){
+             var currency = prompt("Enter amount")
+             var sterling = 850;
+             var totalSterling = currency * sterling
+             alert("£" +totalSterling)
+         }
+
+         function convertSterlingTonaira (){
+             var currency = prompt("Enter amount")
+             var naira = 850;
+             var totalNaira = currency / naira 
+             alert("₦" +totalNaira)
+         }
+
+         function convertNairaToKuwaitiDinar (){
+             var currency = prompt("Enter amount")
+             var kuwaitiDinar = 1440;
+             var totalKuwaitiDinar = currency * kuwaitiDinar
+             alert("¥" +totalKuwaitiDinar)
+         }
+
+         function convertKuwaitiDinarToNaira (){
+             var currency = prompt("Enter amount")
+             var naira = 1440;
+             var totalNaira = currency / naira 
+             alert("₦" +totalNaira)
+         }
+         function convertDollarToEuro (){
+             var currency = prompt("Enter amount")
+             var euro = 0.96;
+             var totalEuro = currency * euro
+             alert("€" +totalEuro)
+         }
+
+         function convertEuroToDollar (){
+             var currency = prompt("Enter amount")
+             var dollar = 0.96;
+             var totalDollar = currency / dollar 
+             alert("$" +totalDollar)
+         }
+
+
+
+
+
+
+     </script>
+</body>
+</html>

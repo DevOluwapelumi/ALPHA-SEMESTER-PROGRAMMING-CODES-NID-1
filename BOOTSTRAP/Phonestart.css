@@ -1,0 +1,24 @@
+.child2 {
+    /* display: none; */
+}
+.cards {
+    margin-left: 40px;
+}
+.test {
+    margin-left: 30px;
+}
+.section2 {
+    padding-left: 76px;
+    width: 100%;
+}
+.sec2 {
+    padding-top: -400px;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Frequently {
+    margin-top: -120px;
+}
+.accord {
+    
+}

@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: grey;
+}
+.future {
+    width: 500px;
+    height: 620px;
+    background-color: white;
+    margin-left: 250px;
+}
+.Futura {
+    font-family: century gothic;
+    font-size: 150px;
+    margin-left: 20px;
+}
+.letter1 {
+    font-family: century gothic;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.letter2 {
+    font-family: century gothic;
+    font-size: 45px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.letter3 {
+    font-family: century gothic;
+    font-size: 45px;
+    font-weight: 550;
+    margin-left: 30px;
+}
+.letter4 {
+    font-family: century gothic;
+    font-size: 43px;
+    /* font-weight: 550; */
+    margin-left: 30px;
+}
+.letter5 {
+    font-family: century gothic;
+    font-size: 40px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.container {
+    font-family: century gothic;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-left: 30px;
+}
+.resize {
+    width: 240px;
+}
+.sizes {
+    font-family: century gothic;
+}
+.medium {
+    font-weight: 550;
+}
+.italic {
+    font-weight: 550;
+    font-style: italic;
+    margin-top: 100px;
+}
+.condensed {
+    font-family: Tw Cen MT condensed;
+    font-size: 20px;
+    margin-top: 100px;
+}
+.condensedz, .extra {
+    font-weight: 900;
+    margin-top: 100px;
+}
